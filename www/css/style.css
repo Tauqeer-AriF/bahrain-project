@@ -1,0 +1,504 @@
+body {
+  margin: 0;
+  background-color: #f2f3f5;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.woff') format('woff'),
+    font-weight: 500;
+    font-style: normal;
+}
+
+header{
+  width: 100%;
+}
+.topnav {
+  font-family:Roboto-Regular;
+  font-family: sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+  background-color: #f9fafb;
+}
+
+.topnav a {
+  float: left;
+  color: #929292;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+}
+
+.topnav a:hover {
+  color: #d73948;
+}
+
+.topnav a.active {
+  background-color: #ffffff;
+  color: grey;
+  border: 1px solid grey;
+  padding: 6px;
+  margin-top: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: unset;
+}
+
+.topnav-right {
+  float: right;
+}
+.icon{
+  margin-left: 50%;
+  display: none !important;
+  float: right;
+}
+
+
+
+
+
+.modal {
+   font-family:Roboto-Regular;
+  font-family: sans-serif;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+   font-family:Roboto-Regular;
+  font-family: sans-serif;
+  background-color: #fefefe;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  font-size: 12px;
+}
+
+/*.model-phone{
+  padding-top: 20px;
+  border:1px solid grey;
+}*/
+#model-input {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 80%;
+  border: 1px solid grey;
+  outline: none;
+  transition: .3s;
+  box-shadow: inset 0 0 10px grey;
+}
+
+#model-input::placeholder{
+  font-size: 13px;
+}
+
+#model-input:hover{
+  box-shadow: inset 0 0 10px grey;
+}
+#model-login{
+  background-color: white;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+#model-button{
+  color: #fff;
+  font-weight: bold;
+  transition: .3s;
+  background-color: #d73948;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#model-button:hover{
+  padding: 10px;
+
+}
+#model-link{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+.categories{
+   font-family:Roboto-Regular;
+  font-family: sans-serif;
+  padding-top: 50px;
+  padding-bottom: 220px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  z-index:10;
+  margin-top: 10px;
+  margin-left: 7%;
+  /*margin-right: 5%;*/
+}
+table {
+  border-collapse: collapse;
+  border-top: 1px solid grey;
+  overflow-x: auto;
+}
+th{
+  padding-top: 20px;
+}
+td, th {
+  font-size: 12px;
+  text-align: left;
+  padding-left: 80px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+td a, th a{
+  color: black;
+  text-decoration: none;
+}
+td a:hover{
+  color: grey;
+}
+
+
+
+
+
+
+
+
+.content {
+   font-family:Roboto-Regular;
+  font-family: sans-serif;
+  padding-top: 12% !important;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+   font-family:Roboto-Regular;
+  font-family: sans-serif;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 15px;
+  font-size: 16px;
+}
+#logo{
+  margin-bottom: 20px;
+}
+#myInput {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 450px !important;
+  border: 1px solid grey;
+  outline: none;
+  transition: .3s;
+}
+
+
+
+#myInput::placeholder{
+  font-size: 13px;
+}
+
+#myInput:hover{
+  box-shadow: inset 0 0 10px grey;
+}
+
+#discount {
+  color: #fff;
+  font-weight: bold;
+  transition: .3s;
+  background-color: #d73948;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#discount:hover{
+  padding: 10px;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  text-align: left;
+  border-bottom: 1px solid #d4d4d4;
+  transition: .3s; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+  margin-left: 5px;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+
+footer{
+   font-family:Roboto-Regular;
+  font-family: sans-serif;
+  font-size: 12px;
+  /*font-weight: 700;*/
+  width: 100%;
+  position: fixed;
+  bottom:0%;
+}
+.footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+  background-color: #f9fafb;
+}
+
+.footer a {
+  float: left;
+  color: grey;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer a:hover {
+  color: black;
+}
+
+.footer-right {
+  float: right !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #myInput{
+  width: 250px !important;
+  }
+  .modal-content {
+  width: 80%;
+  }
+  .content {
+  margin-top: 10%;
+  margin-bottom: 12%;
+  }
+  .content img{
+    width: 100%;
+      }
+      .contact-page{
+        margin-top: 20% !important;
+  margin-bottom: 12%;
+      }
+    .contact-page img{
+    width: 100%;
+      }
+    table, th, td, tr {
+      display: block;
+    }
+    tr {
+      margin: 0 0 1rem 0;
+    }
+    
+    td {
+      border: none;
+      position: relative;
+    }
+
+    td:before {
+      position: absolute;
+      top: 0;
+      left: 6px;
+    }
+    td, th {
+      padding-left: 10px;
+      }
+
+    .categories{
+        width: 70%;
+      }
+      #first-name{
+        width: 250px !important;
+        margin-right: unset !important;
+      }
+      #second-name{
+        width: 250px !important;
+        margin-right: unset !important;
+      }
+      #subject{
+        width: 250px !important;
+          }
+
+  .topnav-right {
+    display: none;position: absolute;margin-top: 50px;
+    background-color: white;z-index: 10;width: 80%;padding: 20px;
+  }
+  .icon{display: block !important;}
+  footer{position: relative; width: 100%;}
+  .footer a{
+    width: 100%;
+  }
+  .topnav-right a{
+    width: 100%; text-align: left;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-page {
+   font-family:Roboto-Regular;
+  font-family: sans-serif;
+  padding-top: 2% !important;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+textarea {
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#first-name{
+  margin-right: 50px;
+  width: 34.5%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: white;
+  transition: .3s;
+}
+#second-name{
+  width: 34.5% ;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: white;
+  transition: .3s;
+}
+#first-name::placeholder{
+  font-size: 13px;
+}
+
+#first-name:hover{
+  box-shadow: inset 0 0 10px grey;
+}
+#second-name::placeholder{
+  font-size: 13px;
+}
+
+#second-name:hover{
+  box-shadow: inset 0 0 10px grey;
+}
+#subject{
+  font-family: unset;
+  height: 150px;
+  font-size: 13px;
+  transition: .3s;
+  outline: none;
+}
+#Subject:hover{
+  box-shadow:inset 0 0 10px grey;
+}
+#Submit {
+  color: #fff;
+  background-color: #d73948;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  transition: .3s;
+}
+#Submit:hover{
+  padding: 10px;
+}
